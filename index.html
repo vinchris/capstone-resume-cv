@@ -1,94 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Resume</title>
-  </head>
-  <body>
-    <h1>Cristian Vintilescu</h1>
-    <img src="./assets/profile.jpg" height="150" />
-    <h2>Summary</h2>
-    <h3>Java and Web Developer</h3>
-    <hr />
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <h3>
-          Politechnika University of Timisoara, Master’s Degree, Systems
-          Engineering (2013 – 2015)
-        </h3>
-      </li>
-      <li>
-        <h3>
-          Politechnika University of Timisoara, Bachelor of Science (BS),
-          Systems Engineering (2009 – 2013)
-        </h3>
-      </li>
-    </ul>
+<head>
+  <head></head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Resume</title>
+</head>
+<body>
+  <section title="header">
+    <div
+      class="container d-flex flex-column align-items-center"
+    >
+      <img
+        src="./assets/profile.jpg"
+        class="d-block mx-auto img-fluid profile_img w-50 p-3 my-2"
+        loading="lazy"
+      />
+      <div class="my-2 text-center">
+        <h1>Cristian Vintilescu</h1>
+        <h2>Java and Web Developer</h2>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <section title="work">
+    <div
+      class="container d-flex flex-column align-items-center"
+    >
+      <div class="col my-2 text-decoration-underline"><h2>Work Experience</h2></div>
+      <div class="col my-2">
+        <div class="container px-4" id="featured-3">
+          <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+            <div
+              class="feature col d-flex flex-column align-items-center"
+            >
+              <div class="m-3 mb-5">
+                <img
+                  class="img-fluid"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJhdQwYV_0al_V2WaUpOOY1lCy5DwCmts2hcg9qMedt8fv8audAZ1LeaHsOm8WdF-ytwo&usqp=CAU"
+                />
+              </div>
+              <h3 class="fs-2 text-body-emphasis">2022-present</h3>
+              <h4>Senior Java Developer</h4>
+            </div>
+            <div
+              class="feature col d-flex flex-column align-items-center"
+            >
+              <div class="m-3 mb-5">
+                <img
+                  class="img-fluid"
+                  src="https://cdn.brandfetch.io/idamgOJ4l0/w/500/h/122/theme/dark/logo.png?k=bfHSJFAPEG"
+                />
+              </div>
+              <h3 class="fs-2 text-body-emphasis">2015-2022</h3>
+              <h4>Java Developer</h4>
+              <h4>DevOps Engineer</h4>
+              <h4>QA Manager</h4>
+            </div>
+            <div
+              class="feature col d-flex flex-column align-items-center"
+            >
+              <div class="m-3 mb-5">
+                <img
+                  class="img-fluid"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Toluna_Corporate_Logo.png/800px-Toluna_Corporate_Logo.png"
+                />
+              </div>
+              <h3 class="fs-2 text-body-emphasis">2014-2015</h3>
+              <h4>Junior Web Developer</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <section title="skills">
+    <div
+      class="container d-flex flex-column text-center"
+      id="skill-section-container"
+    >
+      <div class="col my-2 text-decoration-underline"><h2>Skills</h2></div>
+      <div class="col my-2 d-flex flex-column">
+        <div class="container py-3" id="featured-3">
+          <div
+            class="row g-3 d-flex justify-content-center align-items-stretch"
+          >
+            <!-- CARD START-->
+            <div class="card" style="width: 18rem">
+              <div
+                id="img-container"
+                class="d-flex align-items-center justify-content-center p-2"
+                style="height: 13rem"
+              >
+                <img
+                  src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Java Development</h5>
+                <p class="card-text">Spring Framework</p>
+                <p class="card-text">ADF Framework</p>
+              </div>
+            </div>
+            <!-- CARD END-->
+            <!-- CARD START-->
+            <div class="card" style="width: 18rem">
+              <div
+                id="img-container"
+                class="d-flex align-items-center justify-content-center p-2"
+                style="height: 13rem"
+              >
+                <img
+                  src="https://img.freepik.com/free-vector/students-watching-recorded-lecture-with-professor-talking-from-
+                        tablet-podcast-courses-audio-video-recording-class-recording-access-concept-vector-isolated-
+                        illustration_335657-1983.jpg?t=st=1726751868~exp=1726755468~hmac=8a893eeab8eb1c89ce62c7b930fa8eb7e67c4b6b2efb78d6359ffd53ab46a91a&w=996"
+                  class="card-img-top img-fluid"
+                  alt="web development skills"
+                />
+              </div>
+              <div class="card-body" style="width: 18rem">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">Responsive Design</p>
+                <p class="card-text">UX and UI Design</p>
+                <p class="card-text">Flexbox, Grid, Bootstrap</p>
+              </div>
+            </div>
+            <!-- CARD END-->
+            <!-- CARD START-->
+            <div class="card" style="width: 18rem">
+              <div
+                id="img-container"
+                class="d-flex align-items-centerjustify-content-center p-2"
+                style="height: 13rem"
+              >
+                <img
+                  src="https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer
+                      -tiny-people-javascript-language-javascript-engine-js-web-development-concept_335657-2412.jpg?t=st=1726744131~exp=1726747731~
+                      hmac=54c96fddcdae373e5a68a32c0aca14b4a4bcc6a3634f00ac580cd2bc198504ef&w=996"
+                  class="card-img-top img-fluid"
+                  alt="javascript development skills"
+                />
+              </div>
 
-    <hr />
-    <h2>Work Experience</h2>
-    <ul>
-      <li>
-        <h3>MSG Romania (2022 - present)</h3>
-        <ul>
-          <li><p>Senior Java Developer</p></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Virtual7 Romania (2015 - 2022)</h3>
-        <ul>
-          <li><p>Java Developer</p></li>
-          <li><p>DevOps Engineer</p></li>
-          <li><p>QA Manager</p></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Toluna Romania (2014-2015)</h3>
-        <ul>
-          <li><p>Junior Web Developer</p></li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <h2>Skills</h2>
-    <ul>
-      <li><h3>Java Development</h3></li>
-      <li>
-        <h3>Web Development</h3>
-        <ul>
-          <li><p>HTML5, CSS, Bootstrap, Grid, Flexbox</p></li>
-          <li><p>JavaScript ES6, jQuery</p></li>
-          <li><p>Node.js</p></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Other</h3>
-        <ul>
-          <li><p>RDB's such as Oracle, MySQL and Postgres</p></li>
-          <li><p>Devops tools such as Jenkins 1 and JFrog Artifactory</p></li>
-          <li>
-            <p>
-              bash command scripting, python scripting and project POM
-              configurations
-            </p>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <h2>Certifications</h2>
-    <ul>
-      <li><h3>Oracle ADF Developer (2016)</h3></li>
-      <li><h3>AWS Associate Solutions Architect (2024)</h3></li>
-    </ul>
-    <hr />
-    <h2>Other</h2>
-    <h3><a href="public/contact.html">Contact Me</a> <a href="public/hobbies.html">Hobbies</a></h3>
-    <hr />
-    <footer>
-        <p>© 2024 Cristian Vintilescu. All rights reserved.</p>
-      </footer>
-  </body>
-</html>
+              <div class="card-body">
+                <h5 class="card-title">JS Development</h5>
+                <p class="card-text">NodeJS</p>
+                <p class="card-text">React</p>
+                <p class="card-text">API's</p>
+              </div>
+            </div>
+            <!-- CARD END-->
+            <!-- CARD START-->
+            <div class="card" style="width: 18rem">
+              <div
+                id="img-container"
+                class="d-flex align-items-centerjustify-content-center p-2"
+                style="height: 13rem"
+              >
+                <img
+                  src="https://img.freepik.com/free-vector/two-developers-working-with-big-data-technology-big-data-management-storage-database-analytics-design-data-software-engineering-
+                        concept-vector-isolated-illustration_335657-2135.jpg?t=st=1726751823~exp=1726755423~hmac=052275474beaecc22a5dc33fe22a1954636fb0849bd304a22cf96a9a9bfe46c3&w=996"
+                  class="card-img-top img-fluid img"
+                  alt="other development skills"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Other Development Skills</h5>
+                <p class="card-text">SQL</p>
+                <p class="card-text">AWS</p>
+              </div>
+            </div>
+            <!-- CARD END-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <section title="contact">
+    <div class="container d-flex justify-content-center my-4 w-50">
+      <a class="btn btn-dark" href="mailto:ilove@hotwings.com">CONTACT ME</a>
+    </div>
+  </section>
+  <hr />
+</body>
